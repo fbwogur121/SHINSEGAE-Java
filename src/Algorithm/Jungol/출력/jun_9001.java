@@ -1,4 +1,4 @@
-package Algorithm.Jungol;
+package Algorithm.Jungol.출력;
 
 public class jun_9001 {
     public static void main(String[] args) {

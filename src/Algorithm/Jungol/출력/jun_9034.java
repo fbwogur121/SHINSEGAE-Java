@@ -1,4 +1,4 @@
-package Algorithm.Jungol;
+package Algorithm.Jungol.출력;
 
 //import java.util.Scanner;
 //
