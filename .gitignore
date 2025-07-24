@@ -21,6 +21,8 @@ bin/
 /dist/
 /nbdist/
 /.nb-gradle/
+/.idea/
+java-basic.iml
 
 ### VS Code ###
 .vscode/
