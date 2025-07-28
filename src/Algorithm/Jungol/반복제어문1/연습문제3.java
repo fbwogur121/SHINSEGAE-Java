@@ -1,4 +1,4 @@
-package Algorithm.Jungol.반복제어문;
+package Algorithm.Jungol.반복제어문1;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

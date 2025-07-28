@@ -1,20 +1,22 @@
-package Algorithm.Jungol.연산자;
+package Algorithm.Jungol.배열;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class 형성평가3 {
+public class 자가진단1 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int a = Integer.parseInt(st.nextToken());
-        int b = Integer.parseInt(st.nextToken());
+        char[] arr = new char[10];
 
-        a += 5;
-        b *= 2;
-        System.out.printf("width = %d\nlength = %d\narea = %d", a, b, a * b);
+        for(int i = 0; i<10; i++){
+            arr[i] = st.nextToken().charAt(0);
+        }
+        for(char c: arr){
+            System.out.print(c);
+        }
     }
 }
