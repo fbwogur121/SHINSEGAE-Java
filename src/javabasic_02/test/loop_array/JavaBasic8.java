@@ -18,9 +18,9 @@ public class JavaBasic8 {
                 validateMenu(n);
 
                 switch (n) {
-                    case 1 -> firstFunction(br);
-                    case 2 -> secondFunction(br);
-                    case 3 -> thirdFunction();
+                    case 1 -> depositMoney(br);
+                    case 2 -> withdrawalMoney(br);
+                    case 3 -> showBalance();
                     case 4 -> {
                         System.out.print("프로그램 종료");
                         return;
@@ -45,14 +45,14 @@ public class JavaBasic8 {
         System.out.print("선택> ");
     }
 
-    public static void firstFunction(BufferedReader br) throws IOException {
+    public static void depositMoney(BufferedReader br) throws IOException {
         System.out.print("예금액> ");
         int n = Integer.parseInt(br.readLine());
         myMoney += n;
         System.out.println();
     }
 
-    public static void secondFunction(BufferedReader br) throws IOException {
+    public static void withdrawalMoney(BufferedReader br) throws IOException {
         System.out.print("출금액> ");
         int n = Integer.parseInt(br.readLine());
         if (n > myMoney) {
@@ -63,7 +63,7 @@ public class JavaBasic8 {
         System.out.println();
     }
 
-    public static void thirdFunction() {
+    public static void showBalance() {
         System.out.printf("잔고> %d\n\n", myMoney);
     }
 }
