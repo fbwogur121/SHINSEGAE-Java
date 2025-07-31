@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class JavaBasic9 {
     static int studentNum;
-    static int[] scoreArr;
+    static Student[] students;
     static int maxScore;
     static int sumScore;
     static double avgScore;
@@ -23,11 +23,6 @@ public class JavaBasic9 {
                 continue;
             }
 
-            if (n == 5) {
-                System.out.print("프로그램 종료");
-                break;
-            }
-
             switch (n) {
                 case 1:
                     inputStudentNum(br);
@@ -41,6 +36,9 @@ public class JavaBasic9 {
                 case 4:
                     analyze();
                     break;
+                case 5:
+                    System.out.print("프로그램 종료");
+                    return;
             }
         }
     }
@@ -56,7 +54,7 @@ public class JavaBasic9 {
         System.out.print("학생수> ");
         studentNum = Integer.parseInt(br.readLine());
 
-        scoreArr = new int[studentNum];
+        students = new Student[studentNum];
         maxScore = Integer.MIN_VALUE;
         sumScore = 0;
         avgScore = 0;
@@ -65,15 +63,16 @@ public class JavaBasic9 {
     public static void inputScore(BufferedReader br) throws IOException {
         for (int i = 0; i < studentNum; i++) {
             System.out.printf("scores[%d]> ", i);
-            scoreArr[i] = Integer.parseInt(br.readLine());
-            sumScore += scoreArr[i];
-            if (scoreArr[i] > maxScore) maxScore = scoreArr[i];
+            int score = Integer.parseInt(br.readLine());
+            students[i] = new Student(score);
+            sumScore += score;
+            if (score > maxScore) maxScore = score;
         }
     }
 
     public static void scoreList() {
         for (int i = 0; i < studentNum; i++) {
-            System.out.printf("scores[%d]> %d\n", i, scoreArr[i]);
+            System.out.printf("scores[%d]> %d\n", i, students[i].getScore());
         }
     }
 
