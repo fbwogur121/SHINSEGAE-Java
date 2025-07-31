@@ -15,31 +15,31 @@ public class JavaBasic9 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         while (true) {
-            information();
-            int n = Integer.parseInt(br.readLine());
+            try {
+                information();
+                int n = Integer.parseInt(br.readLine());
 
-            if (n < 1 || n > 5) {
-                System.out.println("잘못된 입력입니다. 1번~5번 중 골라주세요.\n");
-                continue;
-            }
+                validateMenu(n);
 
-            switch (n) {
-                case 1:
-                    inputStudentNum(br);
-                    break;
-                case 2:
-                    inputScore(br);
-                    break;
-                case 3:
-                    scoreList();
-                    break;
-                case 4:
-                    analyze();
-                    break;
-                case 5:
-                    System.out.print("프로그램 종료");
-                    return;
+                switch (n) {
+                    case 1 -> inputStudentNum(br);
+                    case 2 -> inputScore(br);
+                    case 3 -> scoreList();
+                    case 4 -> analyze();
+                    case 5 -> {
+                        System.out.print("프로그램 종료");
+                        return;
+                    }
+                }
+            } catch (InvalidMenuException e) {
+                System.out.println(e.getMessage() + "\n");
             }
+        }
+    }
+
+    public static void validateMenu(int menu) throws InvalidMenuException {
+        if (menu < 1 || menu > 5) {
+            throw new InvalidMenuException("잘못된 입력입니다. 1번~5번 중 골라주세요.");
         }
     }
 

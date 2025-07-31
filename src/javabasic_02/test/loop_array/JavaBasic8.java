@@ -11,23 +11,30 @@ public class JavaBasic8 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         while (true) {
-            information();
-            int n = Integer.parseInt(br.readLine());
+            try{
+                information();
+                int n = Integer.parseInt(br.readLine());
 
-            if (n < 1 || n > 4) {
-                System.out.println("잘못된 입력입니다. 1번~4번 중 골라주세요.\n");
-                continue;
-            }
+                validateMenu(n);
 
-            switch (n) {
-                case 1 -> firstFunction(br);
-                case 2 -> secondFunction(br);
-                case 3 -> thirdFunction();
-                case 4 -> {
-                    System.out.print("프로그램 종료");
-                    return;
+                switch (n) {
+                    case 1 -> firstFunction(br);
+                    case 2 -> secondFunction(br);
+                    case 3 -> thirdFunction();
+                    case 4 -> {
+                        System.out.print("프로그램 종료");
+                        return;
+                    }
                 }
             }
+            catch (InvalidMenuException e){
+                System.out.println(e.getMessage() + "\n");
+            }
+        }
+    }
+    public static void validateMenu(int menu) throws InvalidMenuException {
+        if (menu < 1 || menu > 4) {
+            throw new InvalidMenuException("잘못된 입력입니다. 1번~4번 중 골라주세요.");
         }
     }
 
