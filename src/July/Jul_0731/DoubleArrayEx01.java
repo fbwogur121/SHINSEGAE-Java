@@ -5,7 +5,7 @@ import java.io.IOException;
 public class DoubleArrayEx01 {
     public static void main(String[] args) throws IOException {
         int[][] scores = new int[3][3];
-        int[][] sumAvg = new int[3][2];
+        double[][] sumAvg = new double[3][2];
 
         // 1번학생의 국어 90 영어 50 수학 80
         scores[0][0] = 90;
@@ -35,8 +35,8 @@ public class DoubleArrayEx01 {
                 }
                 sumAvg[i][0] += scores[i][j];
             }
-            double t = sumAvg[i][0]/(double)3;
-            System.out.printf("%d번 학생의 국,영,수 총합: %d, 평균: %.1f\n\n",i+1, sumAvg[i][0], t);
+            sumAvg[i][1] = sumAvg[i][0]/3;
+            System.out.printf("%d번 학생의 국,영,수 총합: %.0f 평균: %.1f\n\n",i+1, sumAvg[i][0], sumAvg[i][1]);
         }
     }
 }
