@@ -4,7 +4,10 @@ import java.io.IOException;
 
 public class DoubleArrayEx01 {
     public static void main(String[] args) throws IOException {
+        //점수 : 1열 국어/2열 영어/3열 수학
         int[][] scores = new int[3][3];
+
+        //총합, 평균
         double[][] sumAvg = new double[3][2];
 
         // 1번학생의 국어 90 영어 50 수학 80
