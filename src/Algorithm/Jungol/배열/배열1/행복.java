@@ -5,25 +5,20 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class 형성평가8 {
+public class 행복 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
+
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int mul5 = 0;
-        int sum = 0;
+        int max = Integer.MIN_VALUE, min = Integer.MAX_VALUE;
 
-        for(int i = 0; i<100; i++){
+        for(int i = 0; i<n; i++){
             int x = Integer.parseInt(st.nextToken());
-
-            if(x ==0 )break;
-            if(x%5==0){
-                mul5++;
-                sum += x;
-            }
+            if(x>max) max = x;
+            if(x<min) min = x;
         }
-        double avg = sum/(double)mul5;
-        System.out.printf("Multiples of 5 : %d\nsum : %d\navg : %.1f",mul5, sum, avg);
+        System.out.print(max-min);
     }
-
 }

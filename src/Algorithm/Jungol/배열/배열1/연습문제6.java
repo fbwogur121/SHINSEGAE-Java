@@ -1,4 +1,4 @@
-package Algorithm.Jungol.배열;
+package Algorithm.Jungol.배열.배열1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
