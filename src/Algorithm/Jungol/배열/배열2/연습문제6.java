@@ -19,11 +19,13 @@ public class 연습문제6 {
                 arr[i][3] += arr[i][j];
             }
         }
+        arr[3][3] = arr[0][3]+arr[1][3]+arr[2][3];
         System.out.println("     국어 영어 수학 총점");
         for(int i = 0; i<4; i++){
-            System.out.printf(" %d번  ",i+1);
+            if(i<3) System.out.printf(" %d번",i+1);
+            else System.out.print("합계");
             for(int j = 0; j<4; j++){
-                System.out.print(arr[i][j] + " ");
+                System.out.printf("%4d", arr[i][j]);
             }
             System.out.println();
         }
