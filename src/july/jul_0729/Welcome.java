@@ -16,15 +16,7 @@ public class Welcome {
         String userMobile = br.readLine();
 
         String[][] nBook = new String[NUM_BOOK][NUM_ITEM];
-//        만들게 될 메뉴별 메서드
-//        →1. 고객 정보 확인하기: menuGuestInfo()
-//        →2. 장바구니 상품 목록 보기: menuCartItemList()
-//        →3. 장바구니 비우기: menuCartClear()
-//        →4. 바구니에 항목 추가하기: menuCartAddItem()
-//        →5. 장바구니의 항목 수량 줄이기: menuCartRemoveItemCount()
-//        →6. 장바구니의 항목 삭제하기: menuCartRemoveItem()
-//        →7. 영수증 표시하기: menuCartBill()
-//        →8. 종료: menuExit()
+
         while (true) {
             menuIntroduction();
 
@@ -37,17 +29,22 @@ public class Welcome {
                         menuGuestInfo(userName, userMobile);
                         break;
                     case 2:
+                        menuCartItemList();
                         break;
                     case 3:
+                        menuCartClear();
                         break;
                     case 4:
                         menuCartAddItem(nBook);
                         break;
                     case 5:
+                        menuCartRemoveItemCount();
                         break;
                     case 6:
+                        menuCartRemoveItem();
                         break;
                     case 7:
+                        menuCartBill();
                         break;
                     case 8:
                         menuExit();
@@ -72,11 +69,43 @@ public class Welcome {
         System.out.print("메뉴 번호를 선택해주세요 ");
     }
 
+    // 1. 고객 정보 확인하기: menuGuestInfo()
     public static void menuGuestInfo(String name, String mobile) {
         System.out.println("현재 고객 정보 : ");
         System.out.println("이름 " + name + " 연락처 " + mobile);
     }
-
+    // 2. 장바구니 상품 목록 보기: menuCartItemList()
+    public static void menuCartItemList(){
+        System.out.println("2. 장바구니 상품 목록 보기");
+    }
+    // 3. 장바구니 비우기: menuCartClear()
+    public static void menuCartClear(){
+        System.out.println("3. 장바구니 비우기");
+    }
+    // 4. 바구니에 항목 추가하기: menuCartAddItem()
+    public static void menuCartAddItem(String[][] book){
+        System.out.println("4. 바구니에 항목 추가하기");
+        BookList(book);
+        for(int i = 0; i<NUM_BOOK;i++){
+            for(int j = 0 ; j < NUM_ITEM; j++){
+                System.out.print(book[i][j]+"|");
+            }
+            System.out.println();
+        }
+    }
+    // 5. 장바구니의 항목 수량 줄이기: menuCartRemoveItemCount()
+    public static void menuCartRemoveItemCount(){
+        System.out.println("5. 장바구니의 항목 수량 줄이기");
+    }
+    // 6. 장바구니의 항목 삭제하기: menuCartRemoveItem()
+    public static void menuCartRemoveItem(){
+        System.out.println("6. 장바구니의 항목 삭제하기");
+    }
+    // 7. 영수증 표시하기: menuCartBill()
+    public static void menuCartBill(){
+        System.out.println("7. 영수증 표시하기");
+    }
+    // 8. 종료: menuExit()
     public static void menuExit(){
         System.out.println("8. 종료");
     }
@@ -106,15 +135,5 @@ public class Welcome {
         book[2][4] = "컴퓨팅 사고력을 키우는 블록 코딩";
         book[2][5] = "컴퓨터 입문";
         book[2][6] = "2019/06/10";
-    }
-
-    public static void menuCartAddItem(String[][] book){
-        BookList(book);
-        for(int i = 0; i<NUM_BOOK;i++){
-            for(int j = 0 ; j < NUM_ITEM; j++){
-                System.out.print(book[i][j]+"|");
-            }
-            System.out.println();
-        }
     }
 }
