@@ -10,12 +10,9 @@ public class BankApplication {
     static int count = 0;
 
     public static void main(String[] args) throws IOException {
-
-
         while (true) {
             info();
             String choice = br.readLine();
-
             switch (choice) {
                 case "1" -> createAccount();
                 case "2" -> accountList();
@@ -108,11 +105,9 @@ public class BankApplication {
     }
 
     static Account findAccount(String accNum) {
-        for (int i = 0; i < count; i++) {
-            if (accounts[i].getAccountNum().equals(accNum)) {
+        for (int i = 0; i < count; i++)
+            if (accounts[i].getAccountNum().equals(accNum))
                 return accounts[i];
-            }
-        }
         return null;
     }
 }
