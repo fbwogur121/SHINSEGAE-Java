@@ -1,4 +1,4 @@
-package august.aug_0806_inheritance;
+package august.aug_0806_inheritance.catExample;
 
 public class CatExample {
     public static void main(String[] args) {

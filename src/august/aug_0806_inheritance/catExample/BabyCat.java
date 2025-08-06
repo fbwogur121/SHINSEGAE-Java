@@ -1,4 +1,4 @@
-package august.aug_0806_inheritance;
+package august.aug_0806_inheritance.catExample;
 
 public class BabyCat extends ParentCat {
     public String color = "초콜릿색";
