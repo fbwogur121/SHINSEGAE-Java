@@ -1,4 +1,4 @@
-package august.aug_0806_inheritance;
+package august.aug_0806_inheritance.calculationExample;
 
 public class Calculation {
 

@@ -1,4 +1,4 @@
-package august.aug_0805.morningTest;
+package august.aug_0805_class.morningTest;
 
 public class Account {
     private String accountNum;

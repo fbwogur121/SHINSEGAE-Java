@@ -1,4 +1,4 @@
-package august.aug_0805.singleTon;
+package august.aug_0805_class.singleTon;
 
 public class SingleTon {
     // 싱글톤 클래스 객체를 담을 인스턴스 변수
@@ -22,9 +22,9 @@ public class SingleTon {
         System.out.println(s1.toString());
         System.out.println(s2.toString());
         System.out.println(s3.toString());
-//        august.aug_0805.singleTon.SingleTone@1f32e575
-//        august.aug_0805.singleTon.SingleTone@1f32e575
-//        august.aug_0805.singleTon.SingleTone@1f32e575
+//        august.aug_0805_class.singleTon.SingleTone@1f32e575
+//        august.aug_0805_class.singleTon.SingleTone@1f32e575
+//        august.aug_0805_class.singleTon.SingleTone@1f32e575
         // >> 싱글톤 패턴은 객체 하나만 만들어서 재활용한다.
 
         System.out.println(s1 == s2);

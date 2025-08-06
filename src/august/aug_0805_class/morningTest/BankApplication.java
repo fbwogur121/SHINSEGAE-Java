@@ -1,4 +1,4 @@
-package august.aug_0805.morningTest;
+package august.aug_0805_class.morningTest;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package august.aug_0806_inheritance;
+package august.aug_0806_inheritance.calculationExample;
 
 public class Inheritance01 extends Calculation {
     void multiplication(int num1, int num2){
