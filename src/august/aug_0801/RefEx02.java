@@ -1,4 +1,4 @@
-package july.jul_0801;
+package august.aug_0801;
 
 /*
 * 똑같은 변수 a의 주소값을 출력하였다.

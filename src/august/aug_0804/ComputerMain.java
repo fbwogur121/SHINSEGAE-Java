@@ -1,4 +1,4 @@
-package july.jul_0804;
+package august.aug_0804;
 
 public class ComputerMain {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package july.jul_0805.morningTest;
+package august.aug_0805.morningTest;
 
 public class MorningTest_class {
     public static void main(String[] args) {

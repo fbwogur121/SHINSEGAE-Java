@@ -1,4 +1,4 @@
-package july.jul_0805.morningTest;
+package august.aug_0805.morningTest;
 
 public class ShopService {
     // 1. 자신의 객체를 정적(static) 필드에 미리 생성

@@ -1,4 +1,4 @@
-package july.jul_0801.stringBufferEx;
+package august.aug_0801.stringBufferEx;
 
 public class StringEx01 {
     public static void main(String[] args) {

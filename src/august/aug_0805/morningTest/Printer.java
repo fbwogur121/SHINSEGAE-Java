@@ -1,4 +1,4 @@
-package july.jul_0805.morningTest;
+package august.aug_0805.morningTest;
 
 public class Printer {
     public static void println(int value) {

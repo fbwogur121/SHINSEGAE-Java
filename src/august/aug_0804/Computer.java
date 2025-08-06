@@ -1,4 +1,4 @@
-package july.jul_0804;
+package august.aug_0804;
 
 //가변길이 매개변수
 //메소드를 호출할 때 매객변수의 개수에 맞게 매개값을 제공해야 한다

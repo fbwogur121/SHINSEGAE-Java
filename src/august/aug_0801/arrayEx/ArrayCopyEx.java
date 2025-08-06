@@ -1,4 +1,4 @@
-//package july.jul_0801.arrayEx;
+//package august.aug_0801.arrayEx;
 //
 //public class ArrayCopyEx {
 //    public static void main(String[] args) {

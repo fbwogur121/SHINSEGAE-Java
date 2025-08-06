@@ -1,4 +1,4 @@
-package july.jul_0801.stringBufferEx;
+package august.aug_0801.stringBufferEx;
 
 // StringBuffer 주요 메서드
 public class StringBufferEx {
