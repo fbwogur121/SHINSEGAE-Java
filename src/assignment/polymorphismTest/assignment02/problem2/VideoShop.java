@@ -1,4 +1,4 @@
-package assignment.polymorphismTest.assignment2.problem2;
+package assignment.polymorphismTest.assignment02.problem2;
 
 public class VideoShop {
     public static void main(String[] args) {

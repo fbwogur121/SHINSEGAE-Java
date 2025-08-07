@@ -1,4 +1,4 @@
-package assignment.polymorphismTest.assignment2.problem1;
+package assignment.polymorphismTest.assignment02.problem1;
 
 public class CoffeShop {
     public static void main(String[] args) {

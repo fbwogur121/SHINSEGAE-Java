@@ -1,4 +1,4 @@
-package assignment.polymorphismTest.assignment1;
+package assignment.polymorphismTest.assignment01;
 
 public abstract class Shape {
     private double area;

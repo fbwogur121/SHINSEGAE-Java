@@ -1,4 +1,4 @@
-package assignment.polymorphismTest.assignment2.problem1;
+package assignment.polymorphismTest.assignment02.problem1;
 
 public class Tea extends Beverage {
     private static int amount = 0;
