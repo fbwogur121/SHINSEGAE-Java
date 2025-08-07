@@ -1,4 +1,4 @@
-package august.aug_0807.typeCasting.automaticTypeCasting.ex01;
+package august.aug_0807.typeCasting.automaticTypeCasting.typeCastingEx01;
 
 class A {}
 class B extends A{}
