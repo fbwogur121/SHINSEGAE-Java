@@ -9,6 +9,7 @@ public class SmartPhone extends Phone {
 
     }
     public SmartPhone(String model, String color){
+        super(); // 생략 가능.
         this.model = model;
         this.color = color;
     }
