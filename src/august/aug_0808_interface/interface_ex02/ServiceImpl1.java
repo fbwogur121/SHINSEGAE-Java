@@ -1,4 +1,4 @@
-package august.aug_0808.ex02;
+package august.aug_0808_interface.interface_ex02;
 
 public class ServiceImpl1 implements Service {
 

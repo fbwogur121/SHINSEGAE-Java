@@ -1,4 +1,4 @@
-package august.aug_0808.ex01;
+package august.aug_0808_interface.interface_ex01;
 
 public class Television implements RemoteControl {
     // 필드 volume

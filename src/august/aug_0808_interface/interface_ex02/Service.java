@@ -1,4 +1,4 @@
-package august.aug_0808.ex02;
+package august.aug_0808_interface.interface_ex02;
 
 public interface Service {
     // 1-1. 디폴트 메소드

@@ -1,4 +1,4 @@
-package august.aug_0808.ex01;
+package august.aug_0808_interface.interface_ex01;
 
 public class vacuumCleaner implements RemoteControl {
     private int time;
