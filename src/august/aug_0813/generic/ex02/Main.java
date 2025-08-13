@@ -1,4 +1,4 @@
-package august.aug_0813_generic.generic.ex02;
+package august.aug_0813.generic.ex02;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package august.aug_0813_generic.resourceEx;
+package august.aug_0813.resourceEx;
 
 public class MyResource implements AutoCloseable {
     private String name;

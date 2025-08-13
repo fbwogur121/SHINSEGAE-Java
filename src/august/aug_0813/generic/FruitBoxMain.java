@@ -1,6 +1,4 @@
-package august.aug_0813_generic.generic;
-
-import august.aug_0806_inheritance.abcdefExample.A;
+package august.aug_0813.generic;
 
 public class FruitBoxMain {
     public static void main(String[] args) {

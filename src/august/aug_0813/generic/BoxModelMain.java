@@ -1,6 +1,4 @@
-package august.aug_0813_generic.generic;
-
-import java.util.ArrayList;
+package august.aug_0813.generic;
 
 public class BoxModelMain {
 

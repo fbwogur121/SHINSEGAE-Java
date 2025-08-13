@@ -1,6 +1,4 @@
-package august.aug_0813_generic.generic;
-
-import august.aug_0806_inheritance.abcdefExample.A;
+package august.aug_0813.generic;
 
 import java.util.ArrayList;
 import java.util.List;
