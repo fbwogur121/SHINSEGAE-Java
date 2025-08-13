@@ -1,0 +1,29 @@
+package august.aug_0813_generic.generic.ex01;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class Fruit{}
+class Apple extends Fruit{}
+class Banana extends Fruit{}
+class Pear extends Fruit{}
+
+class FruitBox<T, U>{
+    List<T> apples = new ArrayList<>();
+    List<U> bananas = new ArrayList<>();
+
+    public void add(T apple, U banana){
+        apples.add(apple);
+        bananas.add(banana);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        //복수 제네릭 타입
+        FruitBox<Apple, Banana> box = new FruitBox<>();
+
+        box.add(new Apple(), new Banana());
+        box.add(new Apple(), new Banana());
+    }
+}
