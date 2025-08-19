@@ -1,4 +1,4 @@
-package august.aug_0819_lamda.comparable_comparator복습.comparable;
+package august.aug_0819_lamda.comparable_comparator_정렬복습.comparable;
 
 /*
 결과
@@ -20,7 +20,6 @@ package august.aug_0819_lamda.comparable_comparator복습.comparable;
 // 객체의 여러 속성을 이용하여 정렬하려면, Comparator 인터페이스 comparing(), thenCompare()
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 
 public class Main2 {

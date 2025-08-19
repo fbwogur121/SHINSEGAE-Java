@@ -1,4 +1,4 @@
-package august.aug_0819_lamda.comparable_comparator복습.comparable;
+package august.aug_0819_lamda.comparable_comparator_정렬복습.comparable;
 
 /*
 결과

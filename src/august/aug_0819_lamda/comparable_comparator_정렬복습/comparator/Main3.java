@@ -1,7 +1,6 @@
-package august.aug_0819_lamda.comparable_comparator복습.comparator;
+package august.aug_0819_lamda.comparable_comparator_정렬복습.comparator;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 
 // 2. Comparator 인터페이스 방법

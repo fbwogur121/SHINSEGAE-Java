@@ -8,7 +8,7 @@ public abstract class Animal {
         setSpeed(speed);
     }
 
-    abstract void run(int hours);
+    protected abstract void run(int hours);
 
     public double getDistance() {
         return distance;
