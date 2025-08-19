@@ -15,7 +15,9 @@ package august.aug_0819_lamda.comparable_comparator복습.comparable;
 // 자바에서는 같은 타입의 인스턴스를 비교할때 Comparabel 인터페이스를 구현 : compareTo() 오버라이딩
 
 // 2. Comparator 인터페이스 방법
-// 익명 객체를 이용하여 좀 더 유연하게 이용해서 정렬할 수 있다.
+// 익명 객체를 이용하여 좀 더 유연하게 다양한 속성을 이용해서 정렬할 수 있다.
+// 만약 나이순으로 정렬했는데, 나이가 같은 사람이 있다면 추가적으로 이름순으로 정렬기준을 제시해 주어야 한다.
+// 객체의 여러 속성을 이용하여 정렬하려면, Comparator 인터페이스 comparing(), thenCompare()
 
 import java.util.Arrays;
 import java.util.Collections;
