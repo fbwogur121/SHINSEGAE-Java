@@ -1,4 +1,4 @@
-package august.aug_0813.dataStructure.classRoom;
+package august.aug_0813_generic.dataStructure.classRoom;
 
 public class Board {
     private String subject; // 게시판에 올릴 글 제목

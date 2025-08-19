@@ -1,4 +1,4 @@
-package august.aug_0813.dataStructure;
+package august.aug_0813_generic.dataStructure;
 
 public class StringArrayEx {
     public static void main(String[] args) {

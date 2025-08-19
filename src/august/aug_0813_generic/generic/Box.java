@@ -1,4 +1,4 @@
-package august.aug_0813.generic;
+package august.aug_0813_generic.generic;
 
 public class Box {
     // Box에 넣을 내용물 content 필드 선언

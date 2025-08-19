@@ -1,4 +1,4 @@
-package august.aug_0813.dataStructure.stackEx;
+package august.aug_0813_generic.dataStructure.stackEx;
 
 // stack 구조는 데이터를 제한적으로 접근할 수 있는 구조이다. (한쪽 끝에서만 자료를 넣거나 뺼 수 있는 구조)
 // LIFO (Last in First out)

@@ -1,4 +1,4 @@
-package august.aug_0813.dataStructure.queueEx;
+package august.aug_0813_generic.dataStructure.queueEx;
 
 import java.util.LinkedList;
 import java.util.Queue;

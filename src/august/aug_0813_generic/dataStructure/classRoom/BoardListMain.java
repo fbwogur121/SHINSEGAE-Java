@@ -1,4 +1,4 @@
-package august.aug_0813.dataStructure.classRoom;
+package august.aug_0813_generic.dataStructure.classRoom;
 
 import java.util.ArrayList;
 import java.util.List;

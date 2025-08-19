@@ -1,4 +1,4 @@
-package august.aug_0813.exceptionEx;
+package august.aug_0813_generic.exceptionEx;
 
 public class ExceptionEx01 {
     public static void main(String[] args) {

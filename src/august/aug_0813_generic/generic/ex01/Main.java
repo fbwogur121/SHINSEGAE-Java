@@ -1,4 +1,4 @@
-package august.aug_0813.generic.ex01;
+package august.aug_0813_generic.generic.ex01;
 
 import java.util.ArrayList;
 import java.util.List;

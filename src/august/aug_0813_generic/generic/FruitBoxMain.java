@@ -1,4 +1,4 @@
-package august.aug_0813.generic;
+package august.aug_0813_generic.generic;
 
 public class FruitBoxMain {
     public static void main(String[] args) {
