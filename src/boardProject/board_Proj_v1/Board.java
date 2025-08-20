@@ -1,4 +1,4 @@
-package board_Proj_v1;
+package boardProject.board_Proj_v1;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
