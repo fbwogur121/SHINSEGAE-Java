@@ -13,8 +13,8 @@ import java.util.Date;
 @AllArgsConstructor // 모든 변수 들어간 생성자
 public class Board {
     private int bno;
-    private String bwriter;
-    private Date bdate;
-    private String btitle;
-    private String bcontent;
+    private String bWriter;
+    private Date bDate;
+    private String bTitle;
+    private String bContent;
 }
