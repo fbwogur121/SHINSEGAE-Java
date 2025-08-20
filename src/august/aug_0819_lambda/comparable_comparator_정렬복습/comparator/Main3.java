@@ -1,4 +1,4 @@
-package august.aug_0819_lamda.comparable_comparator_정렬복습.comparator;
+package august.aug_0819_lambda.comparable_comparator_정렬복습.comparator;
 
 import java.util.Arrays;
 import java.util.Comparator;

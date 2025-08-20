@@ -1,4 +1,4 @@
-package august.aug_0819_lamda.anonymousClass_익명객체.class05;
+package august.aug_0819_lambda.anonymousClass_익명객체.class05;
 
 public interface Operate {
     // 추상메서드

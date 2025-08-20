@@ -1,4 +1,4 @@
-//package august.aug_0819_lamda.anonymousClass_익명객체.class02;
+//package august.aug_0819_lambda.anonymousClass_익명객체.class02;
 //
 //import assignment.interfaceTest.interfaceTest01.Animal;
 //

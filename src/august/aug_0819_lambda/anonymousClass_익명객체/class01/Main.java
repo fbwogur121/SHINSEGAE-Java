@@ -1,4 +1,4 @@
-package august.aug_0819_lamda.anonymousClass_익명객체.class01;
+package august.aug_0819_lambda.anonymousClass_익명객체.class01;
 
 class Aniamal{
     public String eat() {

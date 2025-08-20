@@ -1,4 +1,4 @@
-package august.aug_0819_lamda.anonymousClass_익명객체.class05;
+package august.aug_0819_lambda.anonymousClass_익명객체.class05;
 
 // class04의 Main을 람다식으로 작성
 public class Main {

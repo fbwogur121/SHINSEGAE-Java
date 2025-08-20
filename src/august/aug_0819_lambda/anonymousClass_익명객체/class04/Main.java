@@ -1,4 +1,4 @@
-package august.aug_0819_lamda.anonymousClass_익명객체.class04;
+package august.aug_0819_lambda.anonymousClass_익명객체.class04;
 
 public class Main {
     public static void main(String[] args) {
