@@ -37,4 +37,8 @@ Stream(객체요소 처리)      IntStream      LongStream         DoubleStream 
    - 모든 컬렉션으로붵 객체 스트림을 얻을 수 있다.
 2) 배열로부터 스트림 얻는 방법
    - java.util.Arrays 클래스를 이용하면 다양한 종류의 배열로부터 스트림을 얻어낼 수 있다
-
+3) 숫자 범위로부터 스트림을 얻기
+   - IntStream, LongStream의 정적 메소드 range(), ranceClosed() 메소드를 이용하면
+     특정 범위의 정수 스트림을 얻을 수 있다.
+     range(1, 5) : 1 ~ 4
+     rangeClosed(1, 5) : 1 ~ 5

@@ -1,4 +1,4 @@
-package august.aug_0821_stream.streamInterface.arrayStream;
+package august.aug_0821_stream.resourceFromStream;
 
 import java.util.Arrays;
 import java.util.stream.Stream;
