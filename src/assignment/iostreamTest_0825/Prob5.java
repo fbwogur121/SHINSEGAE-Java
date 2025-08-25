@@ -1,4 +1,4 @@
-package assignment.iostreamTest;
+package assignment.iostreamTest_0825;
 
 import java.io.FileInputStream;
 import java.io.IOException;
