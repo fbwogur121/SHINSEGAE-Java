@@ -46,9 +46,5 @@ public class ReaderEx {
 
         System.out.println(stringBuilder.toString()); // 완성된 문자열 출력
         reader.close();
-
-
-
-        reader.close();
     }
 }
