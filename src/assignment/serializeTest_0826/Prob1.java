@@ -18,6 +18,7 @@ import java.io.*;
 @AllArgsConstructor
 @NoArgsConstructor
 class Person implements Serializable{
+    @Serial
     private static final long serialVersionUID = 1L;
     private String name;
     private transient int age;
@@ -28,30 +29,28 @@ public class Prob1 {
     public static void main(String[] args) throws Exception {
         String fileName = "prob1.dat";
 
+        // 직렬화 대상 객체 생성
         Person hong = new Person("홍길동", 30);
-        FileOutputStream fos = new FileOutputStream(fileName);
-        ObjectOutputStream oos = new ObjectOutputStream(fos);
 
-        oos.writeObject(hong);
+        // 직렬화
+        // try with resources => autocloseable
+        try (ObjectOutput oos = new ObjectOutputStream(new FileOutputStream(fileName))){
+            oos.writeObject(hong);
+        } catch (IOException e){
+            System.out.println("입출력 처리 완료");
+        } catch (Exception e){
+            System.out.println("Exception 처리 완료");
+        }
 
-        oos.flush();
-        oos.close();
-        fos.flush();
-        fos.close();
 
-        FileInputStream fis = new FileInputStream(fileName);
-        ObjectInputStream ois = new ObjectInputStream(fis);
-
-        try {
+        // 역직렬화
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fileName))) {
             while(true){
                 Object obj = ois.readObject();
                 System.out.println(obj);
             }
         } catch (EOFException e){
             System.out.println("파일 읽기 완료");
-        } finally {
-            ois.close();
-            fis.close();
         }
 
     }
