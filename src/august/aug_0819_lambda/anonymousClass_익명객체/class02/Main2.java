@@ -1,6 +1,6 @@
 //package august.aug_0819_lambda.anonymousClass_익명객체.class02;
 //
-//import assignment.interfaceTest.interfaceTest01.Animal;
+//import assignment.interfaceTest_0808.interfaceTest01.Animal;
 //
 //class Aniamal{
 //    public String eat() {
