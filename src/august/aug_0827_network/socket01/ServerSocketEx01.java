@@ -40,7 +40,7 @@ public class ServerSocketEx01 {
             @Override
             public void run(){
                 try {
-                    serverSocket = new ServerSocket(50001);
+                    serverSocket = new ServerSocket(50002);
                     System.out.println("[Server] 시작");
 
                     // while 무한반복 -> 클라이언트 요청이 올때까지 무한 감시

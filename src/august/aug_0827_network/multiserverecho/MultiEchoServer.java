@@ -8,8 +8,12 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class MultiEchoServer {
-    private static final int PORT = 5000;
+    private static final int PORT = 50001;
+
+    // 여러 클라이언트를 받을 수 있는 풀. 클라이언트를 풀에 넣고 핸들링하는 것. 즉, CRUD가 가능하다
     private static final ExecutorService POOL = Executors.newCachedThreadPool();
+
+    //
     private static final AtomicInteger CLIENT_SEQ = new AtomicInteger(1);
 
     public static void main(String[] args) {
@@ -23,7 +27,7 @@ public class MultiEchoServer {
         try (ServerSocket serverSocket = new ServerSocket(PORT)) {
             while (true) {
                 Socket socket = serverSocket.accept();
-                int id = CLIENT_SEQ.getAndIncrement();
+                int id = CLIENT_SEQ.getAndIncrement(); // 클라이언트 고유 ID 부여.
                 System.out.println("[Server] Client#" + id + " connected from " + socket.getRemoteSocketAddress());
                 POOL.submit(new ClientHandler(socket, id));
             }

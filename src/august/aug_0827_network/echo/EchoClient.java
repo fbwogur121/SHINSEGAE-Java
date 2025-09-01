@@ -10,7 +10,7 @@ public class EchoClient {
     public static void main(String[] args) {
         try{
             // 소켓 생성과 동시에 localhost의 50001 포트로 연결 요청
-            Socket socket = new Socket("localhost", 50001);
+            Socket socket = new Socket("localhost", 50002);
             System.out.println("[Client] 연결 성공");
 
             // 데이터 보내기
