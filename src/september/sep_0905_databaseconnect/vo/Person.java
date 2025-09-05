@@ -1,4 +1,4 @@
-package september.vo;
+package september.sep_0905_databaseconnect.vo;
 
 import lombok.*;
 
@@ -10,6 +10,5 @@ import lombok.*;
 public class Person {
     private int id;
     private String name;
-
-
+    private int num;
 }

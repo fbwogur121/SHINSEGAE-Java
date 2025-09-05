@@ -1,6 +1,6 @@
-package september.sep_0905_database;
+package september.sep_0905_databaseconnect;
 
-import september.vo.Person;
+import september.sep_0905_databaseconnect.vo.Person;
 import util.DBUtil;
 
 import java.sql.Connection;
@@ -22,7 +22,7 @@ public class ConnectionDBUtilTest {
             String selectSql = "select id, name from person";
             ResultSet rs = stmt.executeQuery(selectSql);
             while(rs.next()) {
-                september.vo.Person person = new Person();
+                september.sep_0905_databaseconnect.vo.Person person = new Person();
                 person.setId(rs.getInt(1));
                 person.setName(rs.getString(2));
                 System.out.println(person.toString());

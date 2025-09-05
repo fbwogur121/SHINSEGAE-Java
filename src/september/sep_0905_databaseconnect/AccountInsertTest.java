@@ -1,4 +1,4 @@
-package september.sep_0905_database;
+package september.sep_0905_databaseconnect;
 
 /*
 account.sql 테이블 확인
@@ -20,9 +20,8 @@ BoardInsertTest.java 참고해서 작성해 주세요
 
 import java.sql.*;
 
-import september.vo.Person;
 import util.DBUtil;
-import september.vo.Account;
+import september.sep_0905_databaseconnect.vo.Account;
 
 public class AccountInsertTest {
 
@@ -40,7 +39,7 @@ public class AccountInsertTest {
             String selectSql = "select id, name from person";
             ResultSet rs = stmt.executeQuery(selectSql);
             while(rs.next()) {
-                september.vo.Account account = new Account();
+                september.sep_0905_databaseconnect.vo.Account account = new Account();
                 account.setAno(rs.getString(1));
                 account.setOwner(rs.getString(2));
                 account.setBalance(rs.getLong(3));

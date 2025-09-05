@@ -1,15 +1,16 @@
-package september.sep_0905_database;
+package september.sep_0905_databaseconnect;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
-public class ConnectionPreparedInsert {
+public class UserInsertTest {
     public static void main(String[] args) {
         String DriverName = "com.mysql.cj.jdbc.Driver";
         String url = "jdbc:mysql://localhost:3306/bookmarketdb?serverTimezone=Asia/Seoul";
         String username = "bookadmin";
         String password = "Bookadmin123!!";
+
 
         try{
             Class.forName(DriverName);
@@ -22,14 +23,17 @@ public class ConnectionPreparedInsert {
             con.setAutoCommit(true);
 
             // 매개변수화된 SQL문
-            String sql = "INSERT INTO person(id, name) values(?, ?)";
+            String sql = "INSERT INTO users(userid, username, userpassword, userage, useremail) values(?, ?, ?, ?, ?)";
 
             // PreparedStatement
             PreparedStatement pstmt = con.prepareStatement(sql);
 
             // 값 지정(세팅)
-            pstmt.setInt(1, 102);
+            pstmt.setInt(1, 104);
             pstmt.setString(2, "신세계");
+            pstmt.setString(3, "ssgpw");
+            pstmt.setInt(4, 25);
+            pstmt.setString(5, "ssg@gmail.com");
 
             // sql문 실행
             int result = pstmt.executeUpdate();

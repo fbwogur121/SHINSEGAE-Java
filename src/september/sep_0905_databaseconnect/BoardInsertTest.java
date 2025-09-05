@@ -1,4 +1,4 @@
-package september.sep_0905_database;
+package september.sep_0905_databaseconnect;
 
 import java.io.FileInputStream;
 import java.sql.*;

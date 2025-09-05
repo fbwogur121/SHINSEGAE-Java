@@ -1,4 +1,4 @@
-package september.vo;
+package september.sep_0905_databaseconnect.vo;
 
 
 import lombok.*;
