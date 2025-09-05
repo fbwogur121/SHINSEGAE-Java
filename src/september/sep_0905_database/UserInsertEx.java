@@ -13,7 +13,7 @@ public class UserInsertEx {
             System.out.println("Driver loaded successfully!");
 
             // 2. 드라이버 로드가 OK라면, 연결 Connection 객체 생성
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bookmarketdb?serverTimezone=Asia/Seoul", "root", "wogur121!!");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bookmarketdb?serverTimezone=Asia/Seoul", "bookadmin", "Bookadmin123!!");
             System.out.println("Connection established! : " + con);
 
             //3. Connection객체가 생성되었다면, 쿼리문을 아 Statements 객체에 담아 DB에게 전송한다.

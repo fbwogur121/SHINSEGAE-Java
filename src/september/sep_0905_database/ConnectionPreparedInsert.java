@@ -8,8 +8,8 @@ public class ConnectionPreparedInsert {
     public static void main(String[] args) {
         String DriverName = "com.mysql.cj.jdbc.Driver";
         String url = "jdbc:mysql://localhost:3306/bookmarketdb?serverTimezone=Asia/Seoul";
-        String user = "root";
-        String pw = "wogur121!!";
+        String username = "bookadmin";
+        String password = "Bookadmin123!!";
 
         try{
             Class.forName(DriverName);
@@ -17,7 +17,7 @@ public class ConnectionPreparedInsert {
         } catch (Exception e) {
             System.out.println("Driver loaded failed!");
         }
-        try(Connection con = DriverManager.getConnection(url, user, pw)){
+        try(Connection con = DriverManager.getConnection(url, username, password)){
             System.out.println("AutoCommit 상태: " + con.getAutoCommit());
             con.setAutoCommit(true);
 

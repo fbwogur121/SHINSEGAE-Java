@@ -8,8 +8,8 @@ public class BoardInsertTest {
     public static void main(String[] args) {
         String DriverName = "com.mysql.cj.jdbc.Driver";
         String url = "jdbc:mysql://localhost:3306/bookmarketdb?serverTimezone=Asia/Seoul";
-        String username = "root";
-        String password = "wogur121!!";
+        String username = "bookadmin";
+        String password = "Bookadmin123!!";
 
 
         try {
